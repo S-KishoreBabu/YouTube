@@ -1,0 +1,2 @@
+const googleapi="AIzaSyCz_YBQwlM-W4Iyxr9n9Iedfjjh3o7r4qQ"
+export const Youtube_api='https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key='+googleapi
