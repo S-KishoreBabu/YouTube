@@ -19,7 +19,7 @@ import SideBarCard from './SideBarCard';
 
 const Sidebar = () => {
   return (
-    <div className='h-full w-60 px-2 py-5 bg-white '>
+    <div className='h-full w-60 px-2 py-5 bg-white overflow-y-auto '>
       <div className="SideCarCardWrapper border-b border-[#ccc] pb-2">
         <div className="list flex items-center rounded-md px-2 py-2 mt-1 bg-[#eeeeee]">
           <IoMdHome className = "text-2xl"/>

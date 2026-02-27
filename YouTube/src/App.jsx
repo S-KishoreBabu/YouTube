@@ -6,31 +6,32 @@ import MainContainer from "./components/MainContainer";
 import Watchpage from "./components/Watchpage";
 
 
-const appRouter = createBrowserRouter([{
-  path: "/",
-  element: <Body/>,
-  children: [
-    {
-      path: "/",
-      element: <MainContainer/>
-    },
-    {
-      path: "watch",
-      element: <Watchpage/>
-    }
-  ]
-}])
+
 function App() {
   const [sideBarActive,setSideBar] = useState(false);
   const toggle = () =>{
     setSideBar(!sideBarActive);
   }
+  const appRouter = createBrowserRouter([{
+    path: "/",
+    element: <Body sideBarActive = {sideBarActive}/>,
+    children: [
+      {
+        path: "/",
+        element: <MainContainer/>
+      },
+      {
+        path: "watch",
+        element: <Watchpage/>
+      }
+    ]
+  }])
   return (
-    <>
+    <div className="w-screen">
       <Header toggleFunction = {toggle}/>
       {/* <Body sideBarActive = {sideBarActive}/> */}
-      <RouterProvider router={appRouter}/>
-    </> 
+      <RouterProvider router={appRouter} />
+    </div> 
   )
 }
 

@@ -3,7 +3,7 @@ import Tab from './Tab'
 import { Carousel } from 'flowbite-react';
 const TabList = () => {
   return (
-    <div className="w-full bg-white px-7 py-2">
+    <div className="w-full bg-white px-7 py-2 sticky top-0">
       <div className="flex gap-3 overflow-x-auto">
         <Tab content = "Music" />
         <Tab content = "Mixes" />

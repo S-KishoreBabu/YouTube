@@ -3,7 +3,6 @@ import React from 'react'
 const VideoCards = ({data}) => {
     const {snippet,statistics} = data;
     const {channelTitle, title, thumbnails} = snippet;
-    console.log("url->>>",thumbnails.medium.url);
     let imageUrl = `https://i.ytimg.com/vi/${data.id}/maxresdefault.jpg`;
     return (
     <div className=' w-full h-full'> 
@@ -18,6 +17,14 @@ const VideoCards = ({data}) => {
             </div>
         </div>
     </div>
+    )
+}
+
+export const AdVideoCards = ({data}) => {
+    return (
+        <div className="adCard  border border-amber-700 w-full h-full">
+            <VideoCards  data={data}/>
+        </div>
     )
 }
 

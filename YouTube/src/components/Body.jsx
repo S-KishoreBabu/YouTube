@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 const Body = ({sideBarActive}) => {
   return (
-    <div className='w-screen  flex  h-screen'>
+    <div className='  w-screen flex h-screen'>
         {(sideBarActive)?(<SideBarMini/>):(<Sidebar/>)}
         {/* <MainContainer/> */}
         <Outlet/>
