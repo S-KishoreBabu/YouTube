@@ -9,6 +9,7 @@ const SuggestionBox = ({suggestion}) => {
       {/* {suggestion.map((word)=>
       (
         <li className='text-white text-2xl'>{word}</li>
+        <li className='text-white text-2xl'>{word}</li>
         ))} */}
     </ul>
     </div>

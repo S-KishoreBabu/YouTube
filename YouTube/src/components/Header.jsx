@@ -2,7 +2,7 @@ import NavButtons from "./NavButtons"
 import SearchBar from "./SearchBar"
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from '../assets/YouTubeLogo.png'
-import { Link } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 
 const Header = ({toggleFunction}) =>{
     // let [sideBarActive, setSideBarVal] = useState(false);

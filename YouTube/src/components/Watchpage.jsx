@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import CommentCard from "./CommentCard";
-
+import Dummy from "./Dummy";
 const Watchpage = () => {
   const [searchParams] = useSearchParams();
   const videoId = searchParams.get("v");
@@ -39,6 +39,7 @@ const Watchpage = () => {
       ></iframe>
 
       <div className="mt-6">
+        <Dummy/>
         <h2 className="text-xl font-semibold mb-4">
           Comments ({comments.length})
         </h2>
